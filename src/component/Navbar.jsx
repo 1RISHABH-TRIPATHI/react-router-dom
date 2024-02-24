@@ -15,7 +15,7 @@ function Navbar() {
                </div>
                <div>
                     <React.Suspense  fallback={<h2>Loading.....</h2>}>
-                    <Await  resolve={axios.get('https://fakestoreapi.com/prodducts/1')} errorElement={<UseErrorAsynce />}  > 
+                    <Await  resolve={axios.get('https://fakestoreapi.com/products/1')} errorElement={<UseErrorAsynce />}  > 
                     {useOutlet()}
                     </Await>
                     </React.Suspense>
