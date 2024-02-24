@@ -1,11 +1,12 @@
 import './App.css'
-import Routers from './router/routerr'
+import RouTeR2 from './router/router2'
+
 
 function App() {
 
   return (
     <>
-     <Routers />
+     <RouTeR2 />
     </>
   )
 }
