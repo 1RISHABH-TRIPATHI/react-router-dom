@@ -1,15 +1,24 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { useLoaderData } from 'react-router-dom';
+import ShowGrid from './showGrid';
 
 function About() {
     const data=useLoaderData();
-    console.log(data);
   return (
-    <div>
-      <h2>
-        Wel come to About Pages 
-      </h2>
+    <div style={{display:'flex' ,margin:'30px',flexWrap:'wrap',justifyContent:'space-evenly'}}>
+       {data.map(value=>(
+           <ShowGrid 
+            key={value.id}
+            title={value.title}
+            category={value.category}
+            image={value.image}
+            price={value.price}
+            description={value.description}
+            rating={value.rating}
+
+           />
+    ))}
     </div>
   )
 }

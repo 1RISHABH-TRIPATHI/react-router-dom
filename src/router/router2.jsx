@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from '../component/home'
 import Navbar from '../component/Navbar'
 import About from '../component/about'
+import Form from '../component/form'
 
 function RouTeR2() {
     const router=createBrowserRouter([
@@ -19,6 +20,10 @@ function RouTeR2() {
                     path:'about',
                     Component:About,
                     loader:About.loader
+                },
+                {
+                    path:'form',
+                    Component:Form
                 }
             ]
         }
