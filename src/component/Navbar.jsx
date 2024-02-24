@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Home from "./home";
+import axios from 'axios'
 import { Link, useOutlet,Await } from "react-router-dom";
+import UseErrorAsynce from "./UseAsyncError";
 
 function Navbar() {
 	return (
@@ -14,7 +15,7 @@ function Navbar() {
                </div>
                <div>
                     <React.Suspense  fallback={<h2>Loading.....</h2>}>
-                    <Await  resolve={fetch('https://fakestoreapi.com/products/1')}  > 
+                    <Await  resolve={axios.get('https://fakestoreapi.com/prodducts/1')} errorElement={<UseErrorAsynce />}  > 
                     {useOutlet()}
                     </Await>
                     </React.Suspense>
