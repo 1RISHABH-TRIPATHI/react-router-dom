@@ -5,6 +5,7 @@ import Home from '../component/home'
 import Navbar from '../component/Navbar'
 import About from '../component/about'
 import Form from '../component/form'
+import UseAwait from '../component/UseAwait'
 
 function RouTeR2() {
     const router=createBrowserRouter([
@@ -24,6 +25,10 @@ function RouTeR2() {
                 {
                     path:'form',
                     Component:Form
+                },
+                {
+                    path:'use',
+                    Component: UseAwait
                 }
             ]
         }
