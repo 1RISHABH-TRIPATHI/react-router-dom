@@ -5,7 +5,7 @@ import ShowMNI from './ShowMNI';
 import SearchBar from './seeachBar';
 import { useSearchParams } from 'react-router-dom';
 
-function data_MnApi() {
+function MNApi() {
     const data=[
         {
             id:1,
@@ -348,4 +348,4 @@ function data_MnApi() {
   )
 }
 
-export default data_MnApi
+export default MNApi
