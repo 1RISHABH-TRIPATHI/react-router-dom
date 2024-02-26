@@ -11,7 +11,8 @@ function Navbar() {
                <Link to='/'  > Home Page </Link> <br />
                 <Link to='about'  > About Page </Link> <br />
                 <Link to='form'  > From Page </Link> <br />
-                <Link to='use'  > USeAwait Page </Link>
+                <Link to='use'  > USeAwait Page </Link> <br />
+                <Link to='student'  > Student Page </Link>
                </div>
                <div>
                     <React.Suspense  fallback={<h2>Loading.....</h2>}>

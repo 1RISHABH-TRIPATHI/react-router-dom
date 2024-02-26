@@ -6,6 +6,7 @@ import Navbar from '../component/Navbar'
 import About from '../component/about'
 import Form from '../component/form'
 import UseAwait from '../component/UseAwait'
+import UseBeforeLoaD from '../component/useBeforeUnLoad'
 
 function RouTeR2() {
     const router=createBrowserRouter([
@@ -29,6 +30,10 @@ function RouTeR2() {
                 {
                     path:'use',
                     Component: UseAwait
+                },
+                {
+                    path:'student',
+                    Component: UseBeforeLoaD
                 }
             ]
         }
