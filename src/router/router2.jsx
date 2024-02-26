@@ -9,6 +9,7 @@ import UseAwait from '../component/UseAwait'
 import UseBeforeLoaD from '../component/useBeforeUnLoad'
 import UseRevaliDator from '../component/UseRevaliDator'
 import axios from 'axios'
+import data_MnApi from '../component/data_MnApi'
 
 function RouTeR2() {
     const router=createBrowserRouter([
@@ -36,6 +37,10 @@ function RouTeR2() {
                         const res=await axios.get('https://fakestoreapi.com/products')
                         return res.data;
                     }
+                },
+                {
+                    path:'mandir',
+                    Component:data_MnApi
                 }
             ]
         }

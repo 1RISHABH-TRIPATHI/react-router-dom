@@ -11,15 +11,10 @@ function Navbar() {
                <Link to='/'  > Home Page </Link> <br />
                 <Link to='about'  > About Page </Link> <br />
                 <Link to='form'  > From Page </Link> <br />
+                <Link to='mandir'  > Mndir Page </Link> <br />
                 <Link to='Student'  > Student Page </Link> <br />
                </div>
-               <div>
-                    <React.Suspense  fallback={<h2>Loading.....</h2>}>
-                    <Await  resolve={axios.get('https://fakestoreapi.com/products/1')} errorElement={<UseErrorAsynce />}  > 
-                    {useOutlet()}
-                    </Await>
-                    </React.Suspense>
-               </div>
+               {useOutlet()}
 		</>
 
 	);
