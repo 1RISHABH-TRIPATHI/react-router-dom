@@ -7,6 +7,8 @@ import About from '../component/about'
 import Form from '../component/form'
 import UseAwait from '../component/UseAwait'
 import UseBeforeLoaD from '../component/useBeforeUnLoad'
+import UseRevaliDator from '../component/UseRevaliDator'
+import axios from 'axios'
 
 function RouTeR2() {
     const router=createBrowserRouter([
@@ -28,12 +30,12 @@ function RouTeR2() {
                     Component:Form
                 },
                 {
-                    path:'use',
-                    Component: UseAwait
-                },
-                {
-                    path:'student',
-                    Component: UseBeforeLoaD
+                    path:'Student',
+                    Component:UseRevaliDator,
+                    loader:async ()=>{
+                        const res=await axios.get('https://fakestoreapi.com/products')
+                        return res.data;
+                    }
                 }
             ]
         }

@@ -12,8 +12,6 @@ function UseBeforeLoaD() {
     useBeforeUnload(()=>{
         localStorage.setItem('Student Data',JSON.stringify(student))
     });
-    
-    console.log(student);
   return (
     <div>
             <h2>

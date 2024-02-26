@@ -17,5 +17,4 @@ function UseErrorAsynce() {
     </div>
   )
 }
-
 export default UseErrorAsynce
